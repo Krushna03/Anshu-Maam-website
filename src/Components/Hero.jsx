@@ -33,7 +33,7 @@ export default function Hero() {
             </div>
 
             <div className="space-y-6 text-center lg:text-left">
-              <h1 className="text-[28px] sm:text-5xl lg:text-[53px] font-serif font-bold text-gray-700 leading-tight">
+              <h1 className="text-[28px] sm:text-5xl lg:text-[53px] font-serif font-bold text-gray-700/90 leading-tight">
                 <div className="mb-4">Laughter Yoga Expert</div>
                 <div className="mb-4">Happiness Coach</div>
                 <div className="mb-4">Mindfulness Facilitator</div>
