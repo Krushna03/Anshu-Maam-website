@@ -1,6 +1,6 @@
 import React from 'react'
 import { BookOpen, Users, Target } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/Components/ui/card"
 
 const Services = () => {
   return (

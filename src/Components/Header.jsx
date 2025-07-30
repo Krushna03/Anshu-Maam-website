@@ -18,7 +18,7 @@ export default function Header() {
           <img
             src="/anju-logo-removebg.png"
             alt="SN Logo"
-            className="w-28 h-auto"
+            className="w-[100px] sm:w-28 h-auto"
           />
         </Link>
       </div>

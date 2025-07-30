@@ -1,6 +1,6 @@
 import React from 'react'
 import { Award, Lightbulb, Zap } from "lucide-react"
-import { Card } from "@/components/ui/card"
+import { Card } from "@/Components/ui/card"
 
 const Feature = () => {
   return (
