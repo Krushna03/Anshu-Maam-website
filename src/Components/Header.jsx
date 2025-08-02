@@ -7,9 +7,7 @@ export default function Header() {
 
   const toggleMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  const navLinks = [
-    "HOME", "ABOUT", "SERVICES", "CORPORATE WELLNESS", "GALLERY", "CONTACT"
-  ];
+  const navLinks = [ "HOME", "ABOUT", "SERVICES", "CORPORATE WELLNESS", "GALLERY", "CONTACT" ];
 
   return (
     <header className="bg-white flex h-20 w-full items-center justify-between px-4 md:px-6 lg:px-20 sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm">

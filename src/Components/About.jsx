@@ -11,7 +11,7 @@ const certifications = [
 
 const AboutSection = () => {
   return (
-    <section className="bg-[#F4F1F0] py-20 px-4">
+    <section id='about' className="bg-[#F4F1F0] py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex- items-center gap-12">
           {/* Image Section */}
@@ -20,7 +20,7 @@ const AboutSection = () => {
               <img
                 src="ab-1-removebg.png"
                 alt="Anju Shahani"
-                className="w-80 h-80 object-cover rounded-full bg-gray-200"
+                className="w-96 h-96 object-cover rounded-full bg-gray-200"
               />
             </div>
             <h3 className="text-xl mt-4 font-semibold text-[#9C375E]">Anju Shahani</h3>

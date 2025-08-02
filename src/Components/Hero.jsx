@@ -19,7 +19,7 @@ const socialIcons = [
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-gray-50 via-white to-pink-50/30 min-h-screen w-full py-12">
+    <section id="home" className="bg-gradient-to-br from-gray-50 via-white to-pink-50/30 min-h-screen w-full py-12">
       <div className="w-full px-4 sm:px-8 lg:px-16 flex flex-col lg:flex-row items-center lg:items-start">
         
         {/* TEXT SECTION */}
