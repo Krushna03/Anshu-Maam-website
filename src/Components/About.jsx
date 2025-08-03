@@ -1,74 +1,44 @@
-import React from 'react';
-import { Sparkles, Heart, Smile, BookOpen, ShieldCheck, CheckCircle } from 'lucide-react';
+import React from "react";
 
-const certifications = [
-  { icon: CheckCircle, label: "Certified Laughter Yoga Leader Trainer" },
-  { icon: CheckCircle, label: "Certified Yoga Nidra Instructor" },
-  { icon: CheckCircle, label: "Mindfulness Coach" },
-  { icon: CheckCircle, label: "Certified Meditation Practitioner" },
-  { icon: CheckCircle, label: "Mental Health First Aid Trained" },
-];
-
-const AboutSection = () => {
+const About = () => {
   return (
-    <section id='about' className="bg-[#F4F1F0] py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex- items-center gap-12">
-          {/* Image Section */}
-          <div className="w-full md:w-5/12 text-center">
-            <div className="rounded-full overflow-hidden border-4 border-[#9C375E] shadow-lg inline-block">
+    <section className="mb-20 w-full px-4 sm:px-20 py-16 bg-white font-comfortaa relative overflow-hidden">
+      {/* Faded Background Text */}
+      <h2 className="absolute -top-4 left-0 w-full text-center text-[52px] sm:text-[90px] text-pink-100 z-0 tracking-wider select-none font-poppins font-extrabold">
+        ONE WORLD FAMILY
+      </h2>
+
+      <div className="relative top-20 z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-20">
+        {/* Left Image with Arch Border */}
+        <div className="w-full md:w-1/3 flex justify-center md:justify-start">
+          <div className="relative bg-[#fdf8f5] border-[3px] border-[#a4a2a1] rounded-t-[200px] rounded-b-[10px] p-7 shadow-md m-4">
+            <div className="overflow-hidden rounded-t-[180px] rounded-b-[6px] w-[260px] sm:w-[400px] md:w-[340px] aspect-[3/4] bg-white">
               <img
-                src="ab-1-removebg.png"
-                alt="Anju Shahani"
-                className="w-96 h-96 object-cover rounded-full bg-gray-200"
+                src="/anju-about.jpg"
+                alt="Anju"
+                className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl mt-4 font-semibold text-[#9C375E]">Anju Shahani</h3>
           </div>
+        </div>
 
-          {/* Content Section */}
-          <div className="w-full md:w-7/12">
-            <h2 className="text-4xl font-bold text-[#333333] font-serif mb-4 flex items-center gap-2">
-              <Sparkles className="text-[#9C375E]" /> About Anju Shahani
-            </h2>
+        {/* Right Text Content */}
+        <div className="w-full md:w-2/3 space-y-5 text-center md:text-left">
+          <h3 className="text-3xl sm:text-6xl font-extrabold text-black">About Me</h3>
+          <p className="text-[#492a29] font-poppins font-semibold text-base sm:text-xl">
+          • Laughter Yoga Expert • Human Connection Enthusiast
+          </p>
+          <p className="text-[#492a29] font-poppins font-medium text-sm sm:text-xl leading-relaxed md:w-[90%]">
+            I’m Anju—an international coach and certified Laughter Yoga expert on a mission to help people reconnect with joy, resilience, and one another.
+            With over 15 years of experience across six countries, I’ve led thousands through powerful sessions blending science, soul, and a whole lot of laughter.
+            <br /><br />
+            From boardrooms to classrooms, I create spaces where emotional well-being thrives—one breath, one smile, and one breakthrough at a time.
+          </p>
 
-            <div className="h-1 w-20 bg-[#9C375E] rounded mb-6"></div>
-
-            <p className="text-lg text-[#555555] leading-relaxed mb-4">
-              Anju Shahani is a globally recognized expert in <strong>Laughter Yoga</strong>, 
-              <strong> Happiness Coaching</strong>, and <strong>Mindfulness Facilitation</strong>. 
-              With over <strong>15 years of experience</strong>, she has transformed lives globally through wellness practices.
-            </p>
-
-            <p className="text-lg text-[#555555] leading-relaxed mb-4">
-              Her journey started from a personal quest for inner peace amidst life's chaos. 
-              Through yoga, mindfulness, and the healing power of laughter, she found her mission: 
-              to inspire joy and emotional resilience in others.
-            </p>
-
-            <p className="text-lg text-[#555555] leading-relaxed mb-6">
-              As the founder of <strong>"Laugh to Lead"</strong>, Anju has trained over 
-              <strong> 100+ Laughter Yoga Leaders</strong> and collaborated with diverse organizations to promote mental wellbeing.
-            </p>
-
-            {/* Certifications */}
-            <h3 className="text-2xl font-bold font-serif text-[#9C375E] mb-4 flex items-center gap-2">
-              <ShieldCheck className="text-[#9C375E]" /> Certifications & Accreditations
-            </h3>
-
-            <ul className="space-y-3">
-              {certifications.map((cert, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-[#444] text-base">
-                  <cert.icon className="text-[#9C375E] mt-1" size={20} />
-                  {cert.label}
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default AboutSection;
+export default About;

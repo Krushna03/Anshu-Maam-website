@@ -16,11 +16,11 @@ const LandingPage = () => {
       <main className=''>
         <Hero />
         
-        {/* <section id="about" className="">
+        <section id="about" className="">
           <About />
         </section>
 
-        <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-slate-900 text-white">
+        {/* <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-slate-900 text-white">
           <Services />
         </section>
 

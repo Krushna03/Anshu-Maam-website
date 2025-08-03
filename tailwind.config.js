@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'serif': ['Georgia', 'serif'],
 				"comfortaa": ['Comfortaa', 'cursive'],
+				"poppins": ['Poppins'],
       },
   		borderRadius: {
   			lg: 'var(--radius)',

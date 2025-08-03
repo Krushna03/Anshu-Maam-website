@@ -14,7 +14,7 @@ const Hero = () => {
               we grow together.
             </span>
           </h1>
-          <p className="text-base md:text-xl font-semibold text-gray-900">
+          <p className="text-base md:text-2xl font-semibold text-gray-900">
             Experience the gentle, joyful power of laughter-led transformation.
           </p>
           <p className="uppercase tracking-wider text-black font-bold text-sm md:text-base">

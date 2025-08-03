@@ -87,3 +87,7 @@
   background-color: #cd85ad; /* Tailwind's pink-300 */
   color: white; /* Optional: change text color */
 }
+
+.clip-arch {
+  clip-path: ellipse(100% 70% at 50% 30%);
+}
