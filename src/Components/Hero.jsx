@@ -1,91 +1,54 @@
-import { Link } from "react-router-dom"
-import {
-  ArrowRight,
-  Youtube,
-  Linkedin,
-  Instagram,
-  Facebook,
-  Twitter,
-  Sparkles,
-} from "lucide-react"
+import React from "react";
 
-const socialIcons = [
-  { icon: Youtube, color: "bg-[#FF0000]", hoverColor: "hover:bg-[#CC0000]", href: "#" },
-  { icon: Linkedin, color: "bg-[#0A66C2]", hoverColor: "hover:bg-[#004182]", href: "#" },
-  { icon: Instagram, color: "bg-[#E4405F]", hoverColor: "hover:bg-[#C13584]", href: "#" },
-  { icon: Facebook, color: "bg-[#1877F2]", hoverColor: "hover:bg-[#166FE5]", href: "#" },
-  { icon: Twitter, color: "bg-[#1DA1F2]", hoverColor: "hover:bg-[#1A91DA]", href: "#" },
-]
-
-export default function Hero() {
+const Hero = () => {
   return (
-    <section id="home" className="bg-gradient-to-br from-gray-50 via-white to-pink-50/30 min-h-screen w-full py-12">
-      <div className="w-full px-4 sm:px-8 lg:px-16 flex flex-col lg:flex-row items-center lg:items-start">
+    <section className="w-full px-4 sm:px-20 py-12 md:py-20 flex justify-center bg-white font-comfortaa">
+      <div className="w-full max-w-7xl flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
         
-        {/* TEXT SECTION */}
-        <div className="w-full lg:w-[60%] flex flex-col justify-start items-center lg:items-start space-y-8 p-3 sm:p-8">
-          <div className="space-y-4 sm:space-y-8 sm:max-w-3xl text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#AA6B87]/10 to-[#cd85ad]/10 rounded-full border border-[#AA6B87]/20">
-              <Sparkles className="w-4 h-4 text-[#AA6B87]" />
-              <p className="font-semibold tracking-wide text-[#AA6B87] uppercase text-xs lg:text-left">
-                15+ Years of Spreading Joy Globally
-              </p>
-            </div>
-
-            <div className="space-y-6 text-center lg:text-left">
-              <h1 className="text-[28px] sm:text-5xl lg:text-[53px] font-serif font-bold text-gray-700/90 leading-tight">
-                <div className="mb-4">Laughter Yoga Expert</div>
-                <div className="mb-4">Happiness Coach</div>
-                <div className="mb-4">Mindfulness Facilitator</div>
-                <div className="inline-block bg-gradient-to-r from-[#cd85ad] to-[#AA6B87] text-white px-4 py-2 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  Founder, Laugh to Lead
-                </div>
-              </h1>
-            </div>
-
-            <div className="relative text-center lg:text-left">
-              <p className="text-lg lg:text-xl italic text-[#866286] font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                "Joy is not a luxury; it's a tool for resilience, connection, and transformation"
-              </p>
-              <div className="absolute -left-4 -top-2 text-4xl text-[#cd85ad]/20 font-serif hidden sm:block">"</div>
-            </div>
-
-            <div className="flex flex-col gap-3 items-center lg:items-start">
-              <Link
-                to="#"
-                className="inline-flex items-center gap-3 text-xl font-semibold text-[#8B5A7A] hover:text-[#cd85ad] group transition-all duration-300"
-              >
-                <span className="relative">
-                  ALL Services
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#cd85ad] to-[#AA6B87] transition-all duration-300 group-hover:w-full"></span>
-                </span>
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
-
-              <div className="mt-2 flex flex-wrap justify-center lg:justify-start gap-4">
-                {socialIcons.map((social, index) => (
-                  <Link
-                    key={index}
-                    to={social.href}
-                    className={`flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full ${social.color} ${social.hoverColor} text-white transform hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl`}
-                  >
-                    <social.icon className="h-5 w-5" />
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
+        {/* Left Text Section */}
+        <div className="w-full md:w-[55%] space-y-7 text-center md:text-left sm:py-16">
+          <h1 className="text-3xl md:text-[52px] font-semibold tracking-tight leading-tight">
+            When we laugh together,
+            <br />
+            <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
+              we grow together.
+            </span>
+          </h1>
+          <p className="text-base md:text-xl font-semibold text-gray-900">
+            Experience the gentle, joyful power of laughter-led transformation.
+          </p>
+          <p className="uppercase tracking-wider text-black font-bold text-sm md:text-base">
+            15+ Years of Experience
+          </p>
+          <button className="bg-gradient-to-r from-pink-500 to-purple-500 text-white font-medium px-12 py-3 rounded-full text-base md:text-lg shadow-md hover:opacity-90 transition">
+            Join A Session
+          </button>
         </div>
 
-        {/* IMAGE SECTION */}
-        <div className="w-full lg:w-[40%] flex justify-center mt-0 lg:mt-0">
-          <img
-            src="/ab-1-removebg.png"
-            alt="Woman in pink blazer"
-            className="h-[50vh] sm:h-[70vh] lg:h-[90vh] w-full object-contain rounded-lg"
-          />
+        {/* Right Image Section */}
+        <div className="w-full md:w-[45%] flex justify-center relative">
+          <div className="relative w-[90%] sm:w-[400px] md:w-[500px] lg:w-[550px] 
+            h-[350px] sm:h-[400px] md:h-[440px] lg:h-[470px] 
+            rounded-[50%_0_50%_0] bg-gradient-to-b from-[#fdd1e34e] to-[#fb2a8bac] shadow-2xl overflow-hidden">
+
+            <div className="absolute bottom-0 w-full h-2/3 bg-gradient-to-t from-pink-400/80 to-transparent z-30"></div>
+
+            <div className="relative flex justify-center items-center">
+              <img
+                src="/hero-img.png"
+                alt="Profile"
+                className="h-full object-contain mx-auto mt-[-30px] scale-[1.2] md:scale-[1.40]"
+              />
+            </div>
+
+            <div className="absolute inset-0 bg-white/10 z-0"></div>
+          </div>
+
+          <div className="hidden md:block absolute top-2 left-0 md:right-[calc(100%-30px)] w-6 h-6 md:w-10 md:h-10 bg-[#e778b4] rounded-full"></div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default Hero;

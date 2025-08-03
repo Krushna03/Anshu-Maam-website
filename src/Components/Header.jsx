@@ -1,62 +1,66 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
-export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const toggleMenu = () => setMobileMenuOpen(!mobileMenuOpen);
-
-  const navLinks = [ "HOME", "ABOUT", "SERVICES", "CORPORATE WELLNESS", "GALLERY", "CONTACT" ];
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white flex h-20 w-full items-center justify-between px-4 md:px-6 lg:px-20 sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
-      <div className="flex items-center gap-2">
-        <Link to="/" className="flex items-center gap-2">
-          <img
-            src="/anju-logo-removebg.png"
-            alt="SN Logo"
-            className="w-[100px] sm:w-28 h-auto"
-          />
-        </Link>
-      </div>
-
-      {/* Desktop Nav */}
-      <nav className="hidden md:flex gap-6 lg:gap-10">
-        {navLinks.map((label) => (
-          <Link
-            key={label}
-            to="#"
-            className="relative text-sm xl:text-base font-semibold text-custom-plum hover:text-[#cd85ad] transition-all duration-300 group"
-          >
-            {label}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#cd85ad] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-        ))}
-      </nav>
-
-      {/* Mobile Menu Icon */}
-      <div className="md:hidden flex items-center">
-        <button onClick={toggleMenu} aria-label="Toggle Menu">
-          {mobileMenuOpen ? <X className="h-6 w-6 text-custom-plum" /> : <Menu className="h-6 w-6 text-custom-plum" />}
-        </button>
-      </div>
-
-      {/* Mobile Nav Dropdown */}
-      {mobileMenuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-white shadow-md flex flex-col items-start px-6 py-4 z-40 md:hidden border-t border-gray-200">
-          {navLinks.map((label) => (
-            <Link
-              key={label}
-              to="#"
-              className="text-sm font-semibold text-custom-plum py-2 w-full border-b border-gray-100 hover:text-[#cd85ad] transition"
-              onClick={() => setMobileMenuOpen(false)} // close on click
-            >
-              {label}
-            </Link>
-          ))}
+    <header className="text-center w-full flex justify-center py-4">
+      <nav className="w-[90%] max-w-[1330px] bg-pink-50 border border-pink-200 rounded-full px-4 md:px-8 flex items-center justify-between shadow-sm relative">
+        {/* Logo */}
+        <div className="text-3xl font-logo text-black py-3">
+          <img src="logo-1.png" alt="logo" className="h-11 w-11" />
         </div>
-      )}
+
+        {/* Navigation Links (visible on md and above) */}
+        <ul className="hidden sm:flex items-center font-sans gap-8 md:gap-10 text-lg md:text-xl font-medium py-3">
+          <li className="text-black hover:font-bold cursor-pointer">Home</li>
+          <li className="text-black hover:font-bold cursor-pointer">About Us</li>
+          <li className="text-black hover:font-bold cursor-pointer">Services</li>
+        </ul>
+
+        {/* Contact Us Button (flush right, full height) */}
+        <div className="hidden sm:block -mx-3 md:-mx-8">
+          <Link
+            to="#"
+            className="bg-[#ff007f] hover:bg-[#e60073] text-white text-base md:text-lg font-normal px-6 md:px-8 py-[0.75rem] md:py-[18px] rounded-full border-[3px] border-white shadow-sm transition-all"
+          >
+            Contact Us
+          </Link>
+        </div>
+
+        {/* Mobile Menu Icon (only on small screens) */}
+        <div className="sm:hidden absolute right-4">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-black focus:outline-none"
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        {/* Mobile Dropdown Menu */}
+        {menuOpen && (
+          <div className="absolute top-full mt-2 left-0 w-full bg-white rounded-xl shadow-lg p-6 z-10 md:hidden">
+            <ul className="flex flex-col gap-4 text-lg font-medium">
+              <li className="text-black hover:font-bold cursor-pointer">Home</li>
+              <li className="text-black hover:font-bold cursor-pointer">About Us</li>
+              <li className="text-black hover:font-bold cursor-pointer">Services</li>
+            </ul>
+            <div className="mt-4">
+              <Link
+                to="#"
+                className="block bg-[#ff007f] hover:bg-[#e60073] text-white text-lg font-normal text-center px-6 py-3 rounded-full shadow-md transition-all"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        )}
+      </nav>
     </header>
   );
-}
+};
+
+export default Header;

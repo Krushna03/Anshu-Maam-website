@@ -8,6 +8,7 @@ export default {
   	extend: {
       fontFamily: {
         'serif': ['Georgia', 'serif'],
+				"comfortaa": ['Comfortaa', 'cursive'],
       },
   		borderRadius: {
   			lg: 'var(--radius)',

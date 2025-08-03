@@ -10,13 +10,13 @@ import Footer from '../Components/Footer'
 const LandingPage = () => {
   
   return (
-    <div className="bg-[#f7edf5] min-h-screen">  
+    <>  
       <Header />
 
       <main className=''>
         <Hero />
         
-        <section id="about" className="">
+        {/* <section id="about" className="">
           <About />
         </section>
 
@@ -29,9 +29,9 @@ const LandingPage = () => {
         </section>
         
         <CallToAction />
-        <Footer />
+        <Footer /> */}
       </main>
-    </div>
+    </>
   )
 }
 
