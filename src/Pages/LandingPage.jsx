@@ -6,6 +6,7 @@ import Services from '../Components/Services'
 import Feature from '../Components/Feature'
 import CallToAction from '../Components/CallToAction'
 import Footer from '../Components/Footer'
+import Slider from '../Components/Slider'
 
 const LandingPage = () => {
   
@@ -18,6 +19,10 @@ const LandingPage = () => {
         
         <section id="about" className="">
           <About />
+        </section>
+        
+        <section id="about" className="">
+          <Slider />
         </section>
 
         {/* <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-slate-900 text-white">
