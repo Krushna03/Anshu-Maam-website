@@ -1,35 +1,37 @@
-import React from 'react'
-import { Button } from "@/Components/ui/button"
+import React from "react";
 
 const CallToAction = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white">
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">
-              Ready to Start Learning?
-            </h2>
-            <p className="max-w-[600px] text-slate-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Join thousands of students who are already transforming their careers with EduLearn.
-            </p>
-          </div>
-          <div className="space-x-4">
-            <Button size="lg" className="bg-sky-600 hover:bg-sky-700 text-white">
-              Start Free Trial
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-sky-600 text-sky-400 bg-gray-700 hover:bg-sky-950 hover:text-white"
-            >
-              View Courses
-            </Button>
-          </div>
+    <section className="w-full bg-[#FED2E840] px-4 sm:px-8 py-20 font-comfortaa">
+      <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-8">
+        {/* Text */}
+        <div>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-[#1f1f1f]">
+            Ready to Rediscover the Joy of Laughter?
+          </h2>
+          <p className="text-lg sm:text-xl text-[#1f1f1f] mt-2">
+            Join our next session and feel the shift.
+          </p>
+        </div>
+
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+          {/* Filled Button */}
+          <button className="px-6 py-2 text-white rounded-full text-sm sm:text-base font-medium bg-gradient-to-r from-[#ff4ec0] to-[#8e2de2] hover:opacity-90 transition">
+            Book A Session
+          </button>
+
+          {/* Outlined Gradient Border Button */}
+          <button className="px-6 py-2 rounded-full text-sm sm:text-base font-medium bg-white text-[#ff4ec0] border-2 border-transparent relative group">
+            <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[#ff4ec0] to-[#8e2de2] group-hover:opacity-20 opacity-10"></span>
+            <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#ff4ec0] to-[#8e2de2]">
+              Talk To Us
+            </span>
+          </button>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CallToAction
+export default CallToAction;

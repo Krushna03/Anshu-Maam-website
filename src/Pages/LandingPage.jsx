@@ -2,11 +2,12 @@ import React from 'react'
 import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import About from '../Components/About'
-import Services from '../Components/Services'
-import Feature from '../Components/Feature'
-import CallToAction from '../Components/CallToAction'
 import Footer from '../Components/Footer'
 import Slider from '../Components/Slider'
+import OfferingsSection from '../Components/OfferingSection'
+import EventCard from '../Components/EventCard'
+import VoiceOfJoy from '../Components/VoiceOfJoy'
+import CallToAction from '../Components/CallToAction'
 
 const LandingPage = () => {
   
@@ -21,20 +22,24 @@ const LandingPage = () => {
           <About />
         </section>
         
-        <section id="about" className="">
+        <section id="slider" className="">
           <Slider />
         </section>
-
-        {/* <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-slate-900 text-white">
-          <Services />
+        
+        <section id="offering" className="">
+          <OfferingsSection />
         </section>
-
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-slate-900 text-white">
-          <Feature />
+        
+        <section id="events" className="">
+          <EventCard />
+        </section>
+        
+        <section id="voice-of-joy" className="">
+          <VoiceOfJoy />
         </section>
         
         <CallToAction />
-        <Footer /> */}
+        <Footer />
       </main>
     </>
   )
