@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 const videos = [
   "voj-1.mp4",
   "voj-2.mp4",
-  "voj-3.mp4",
+  "voj-3.mov",
   "voj-4.mp4",
 ];
 

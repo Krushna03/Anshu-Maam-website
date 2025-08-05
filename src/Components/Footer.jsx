@@ -2,6 +2,26 @@ import React from "react";
 import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+
+  const handleNavigate = (value) => {
+    switch (value) {
+      case "youtube":
+        window.open("https://www.youtube.com/@laughwithanju", "_blank");
+        break;
+    
+      case "linkedin":
+        window.open("https://www.linkedin.com/in/anju-shahani/", "_blank");
+        break;
+    
+      case "instagram":
+        window.open("https://www.instagram.com/laughwithanju/", "_blank");
+        break;
+
+      default:
+        break;
+    }
+  }
+
   return (
     <footer className="bg-[#FEA0CF] text-[#1f1f1f] font-comfortaa px-4 sm:px-8 py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-[#d7499c] pb-10">
@@ -31,9 +51,9 @@ const Footer = () => {
         <div className="space-y-4 text-center md:text-left">
           <h3 className="text-lg font-bold">Social Media</h3>
           <div className="flex justify-center md:justify-start gap-4 text-xl text-[#1f1f1f]">
-            <FaInstagram />
-            <FaLinkedinIn />
-            <FaYoutube />
+            <FaInstagram onClick={() => handleNavigate("instagram")} />
+            <FaLinkedinIn onClick={() => handleNavigate("linkedin")} />
+            <FaYoutube onClick={() => handleNavigate("youtube")} />
           </div>
           <p className="text-sm font-medium mt-4">Subscribe to our newsletter</p>
           <div className="relative max-w-xs mx-auto md:mx-0">
