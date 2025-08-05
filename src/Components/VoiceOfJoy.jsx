@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 
 const videos = [
-  "https://source.unsplash.com/400x600/?person,1",
-  "https://source.unsplash.com/400x600/?person,2",
-  "https://source.unsplash.com/400x600/?person,3",
-  "https://source.unsplash.com/400x600/?person,4",
+  "voj-1.mp4",
+  "voj-2.mp4",
+  "voj-3.mp4",
+  "voj-4.mp4",
 ];
 
 const VoiceOfJoy = () => {
@@ -50,35 +50,35 @@ const VoiceOfJoy = () => {
   };
 
   return (
-    <section className="w-full bg-white px-4 sm:px-8 py-16 font-comfortaa">
+    <section className="w-full bg-white px-4 sm:px-8 py-10 sm:py-20 font-comfortaa">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
         {/* Left Content */}
-        <div className="w-full lg:w-[40%] space-y-6">
+        <div className="w-full lg:w-[40%] space-y-6 lg:mt-10">
           <h2 className="text-3xl sm:text-5xl font-bold text-black">
             Hear Voice of Joy
           </h2>
-          <p className="text-gray-500 text-sm sm:text-base">
+          <p className="text-gray-500 text-sm sm:text-base font-bold">
             Real moments. Genuine transformations.
           </p>
-          <p className="text-lg sm:text-xl text-black leading-relaxed">
+          <p className="text-lg sm:text-xl font-bold text-black leading-relaxed lg:pt-8">
             Every session leaves behind more than smiles. Hear how laughter
             yoga has helped others reset and reconnect
           </p>
 
           {/* Avatars & Stat */}
-          <div className="flex items-center gap-4 sm:gap-6">
+          <div className="flex items-center gap-4 sm:gap-8 ">
             <div className="flex -space-x-3">
               {["women/1", "women/2", "women/3"].map((user, i) => (
                 <img
                   key={i}
                   src={`https://randomuser.me/api/portraits/${user}.jpg`}
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                  className="w-14 h-14 rounded-full border-2 border-white object-cover"
                   alt="avatar"
                 />
               ))}
             </div>
             <div>
-              <p className="text-[#ff0f83] text-3xl font-bold leading-tight">
+              <p className="text-[#ff0f83] text-3xl sm:text-4xl font-extrabold leading-tight">
                 100+
               </p>
               <p className="text-sm text-gray-600 font-medium">
@@ -88,7 +88,7 @@ const VoiceOfJoy = () => {
           </div>
 
           {/* Button */}
-          <button className="mt-4 sm:mt-6 px-6 py-2 bg-[#ff0f83] text-white font-semibold text-sm sm:text-base rounded-full">
+          <button className="mt-4 sm:mt-6 px-8 py-3 bg-[#ff0f83] text-white font-semibold text-sm sm:text-lg rounded-full">
             Watch More
           </button>
         </div>
@@ -110,25 +110,15 @@ const VoiceOfJoy = () => {
                 key={idx}
                 className="w-[92%] shrink-0"
               >
-                <div className="relative rounded-[30px] overflow-hidden h-[360px]">
-                  <img
-                    src={src}
-                    alt={`video-${idx}`}
-                    className="w-full h-full object-cover"
-                  />
-                  {/* Play button overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                    <div className="w-16 h-16 bg-white bg-opacity-60 rounded-full flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#000"
-                        viewBox="0 0 24 24"
-                        className="w-6 h-6"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
+                <div className="relative rounded-[30px] overflow-hidden h-[400px] sm:h-[550px]">
+                <video
+                  src={`${src}`}
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
                 </div>
               </div>
             ))}
