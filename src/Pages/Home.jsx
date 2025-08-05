@@ -35,8 +35,6 @@ const Home = () => {
         <section id="voice-of-joy" className="">
           <VoiceOfJoy />
         </section>
-        
-        <CallToAction />
       </main>
     </>
   )
