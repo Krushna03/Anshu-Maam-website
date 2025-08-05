@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -15,9 +15,15 @@ const Header = () => {
 
         {/* Navigation Links (visible on md and above) */}
         <ul className="hidden sm:flex items-center font-sans gap-8 md:gap-10 text-lg md:text-xl font-medium py-3">
-          <li className="text-black hover:font-bold cursor-pointer">Home</li>
-          <li className="text-black hover:font-bold cursor-pointer">About Us</li>
-          <li className="text-black hover:font-bold cursor-pointer">Services</li>
+          <NavLink to={"/"} className="text-black hover:font-bold cursor-pointer">
+            Home
+          </NavLink>
+          <NavLink to={"/about-us"} className="text-black hover:font-bold cursor-pointer">
+            About Us
+          </NavLink>
+          <NavLink to={"/services"} className="text-black hover:font-bold cursor-pointer">
+            Services
+          </NavLink>
         </ul>
 
         {/* Contact Us Button (flush right, full height) */}
