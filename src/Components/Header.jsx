@@ -50,13 +50,19 @@ const Header = () => {
         {menuOpen && (
           <div className="absolute top-full mt-2 left-0 w-full bg-white rounded-xl shadow-lg p-6 z-10 md:hidden">
             <ul className="flex flex-col gap-4 text-lg font-medium">
-              <li className="text-black hover:font-bold cursor-pointer">Home</li>
-              <li className="text-black hover:font-bold cursor-pointer">About Us</li>
-              <li className="text-black hover:font-bold cursor-pointer">Services</li>
+              <NavLink to={"/"} className="text-black hover:font-bold cursor-pointer">
+                Home
+              </NavLink>
+              <NavLink to={"/about-us"} className="text-black hover:font-bold cursor-pointer">
+                About Us
+              </NavLink>
+              <NavLink to={"/services"} className="text-black hover:font-bold cursor-pointer">
+                Services
+              </NavLink>
             </ul>
             <div className="mt-4">
               <Link
-                to="#"
+                to="contact-us"
                 className="block bg-[#ff007f] hover:bg-[#e60073] text-white text-lg font-normal text-center px-6 py-3 rounded-full shadow-md transition-all"
               >
                 Contact Us

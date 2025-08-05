@@ -2,12 +2,12 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="overflow-x-hidden md:max-w-7xl mx-auto py-12 text-gray-800 space-y-28">
+    <div className="overflow-x-hidden md:max-w-7xl mx-auto px-4 sm:px-6 py-12 text-gray-800 space-y-28">
       {/* About Section */}
       <section className="space-y-12">
         <h2 className="text-4xl sm:text-6xl font-comfortaa">About</h2>
 
-        <div className="flex flex-col md:flex-row gap-12 items-start">
+        <div className="flex flex-col md:flex-row gap-10 items-start">
           {/* Image Left */}
           <div className="w-full md:w-1/2">
             <img
@@ -18,7 +18,7 @@ const AboutUs = () => {
           </div>
 
           {/* Text Right */}
-          <div className="w-full md:w-1/2 space-y-8 mt-10">
+          <div className="w-full md:w-1/2 space-y-6 mt-6 md:mt-0">
             <div className="text-sm sm:text-xl uppercase font-semibold leading-loose text-gray-900 tracking-wider font-poppins">
               Professional Coach <br />
               Laughter Yoga Expert <br />
@@ -42,13 +42,13 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Experience Section - Text Left, Image Right */}
+      {/* Experience Section */}
       <section className="space-y-10 pt-12">
         <h2 className="text-4xl font-bold sm:text-5xl font-comfortaa">
           Know My Experience
         </h2>
 
-        <div className="flex flex-col md:flex-row-reverse gap-12 items-start">
+        <div className="flex flex-col md:flex-row-reverse gap-10 items-start">
           {/* Image Right */}
           <div className="w-full md:w-1/2">
             <img
@@ -59,12 +59,12 @@ const AboutUs = () => {
           </div>
 
           {/* Text Left */}
-          <div className="w-full md:w-1/2 space-y-6 mt-4 font-poppins">
+          <div className="w-full md:w-1/2 space-y-6 mt-6 md:mt-0 font-poppins">
             <p className="text-sm sm:text-xl uppercase font-semibold leading-loose text-gray-900 tracking-wider">
               Every session I lead — whether for teams, schools, or individuals —
               is designed to balance science with soul, and blend tools with trust.
             </p>
-            <div className="bg-[#FFF6EE] p-4 space-y-3 shadow-lg">
+            <div className="bg-[#FFF6EE] p-4 space-y-3 shadow-lg text-sm sm:text-base">
               <p>
                 I’m a certified Laughter Yoga Expert and proud Ambassador of Dr. Madan Kataria’s Laughter Yoga University, where I’ve spent over 15 years bringing science-backed joy to individuals and organizations across the globe. From C-suite boardrooms to student workshops, I’ve led thousands through Laughter Yoga, mindfulness sessions, and PowerCharge Coaching, creating safe spaces where well-being, creativity, and emotional release can thrive.
               </p>
@@ -76,15 +76,15 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Laugh to Lead Section - Image Left, Text Right */}
+      {/* Laugh to Lead Section */}
       <section className="space-y-10">
         <h2 className="text-4xl font-bold sm:text-5xl font-comfortaa">
           About Laugh to Lead
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-12 items-start">
+        <div className="flex flex-col md:flex-row gap-10 items-start">
           {/* Image Left */}
-          <div className="w-full md:w-[60%]">
+          <div className="w-full md:w-3/5">
             <img
               src="/ab-3.jpg"
               alt="Laugh to Lead"
@@ -93,7 +93,7 @@ const AboutUs = () => {
           </div>
 
           {/* Text Right */}
-          <div className="w-full md:w-[50%] text-lg space-y-5 mt-10 font-poppins">
+          <div className="w-full md:w-1/2 text-base sm:text-lg space-y-5 mt-6 md:mt-0 font-poppins">
             <p>
               Today, my journey has come full circle with Laugh to Lead, a leadership and wellness program for those who want to build stronger teams, manage stress with intention, and lead with emotional intelligence and joy. It’s a culmination of everything I’ve learned about people, presence, and performance.
             </p>
@@ -105,9 +105,7 @@ const AboutUs = () => {
               My motto is simple: <span className="font-bold">One World Family.</span>
             </p>
             <p className="text-[#594141] rounded-lg font-semibold">
-              Because when we laugh together,
-              {/* <br className="hidden sm:block" /> */}
-              we grow together.
+              Because when we laugh together, we grow together.
             </p>
           </div>
         </div>
