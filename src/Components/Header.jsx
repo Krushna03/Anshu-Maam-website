@@ -29,7 +29,7 @@ const Header = () => {
         {/* Contact Us Button (flush right, full height) */}
         <div className="hidden sm:block -mx-3 md:-mx-8">
           <Link
-            to="#"
+            to="/contact-us"
             className="bg-[#ff007f] hover:bg-[#e60073] text-white text-base md:text-lg font-normal px-6 md:px-8 py-[0.75rem] md:py-[18px] rounded-full border-[3px] border-white shadow-sm transition-all"
           >
             Contact Us

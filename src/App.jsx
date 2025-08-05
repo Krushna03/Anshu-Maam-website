@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import ProjectLayout from './Layout/ProjectLayout'
 import AboutUs from './Pages/AboutUs'
 import Services from './Pages/Services'
+import ContactUs from './Pages/ContactUs'
 
 function App() {
   
@@ -22,6 +23,10 @@ function App() {
         {
           path: "/services",
           element: <Services />
+        },
+        {
+          path: "/contact-us",
+          element: <ContactUs />
         }
       ]
     },
