@@ -9,8 +9,8 @@ export default function LeadersCertificate() {
         <div className="flex-1">
           <h1 className="px-4 sm:px-0 text-3xl sm:text-5xl font-comfortaa font-bold text-gray-900 leading-[1.5] tracking-wide">
             Laughter Yoga
-            <p className="mt-2">Leaders</p>
-            <p className="mt-2">Certification</p>
+            <p className="sm:mt-2">Leaders</p>
+            <p className="sm:mt-2">Certification</p>
           </h1>
 
           <div className="mt-5 sm:mt-20 mb-8 sm:mb-12 max-w-md">
@@ -105,7 +105,7 @@ export default function LeadersCertificate() {
         </section>
 
         {/* Target Audience */}
-        <section className="mb-24">
+        <section>
           <p className="max-w-3xl mx-auto text-center text-lg sm:text-xl lg:text-2xl font-poppins text-gray-700 leading-relaxed">
             Perfect for coaches, facilitators, HR professionals, teachers, and anyone who believes in the power of laughter.
           </p>

@@ -10,8 +10,8 @@ export default function PowerCharge() {
         <div className="flex-1">
           <h1 className="px-4 sm:px-0 text-3xl sm:text-5xl font-comfortaa font-bold text-gray-900 leading-[1.5] tracking-wide">
             PowerCharge 
-            <p className='mt-2'>for Inner</p>
-            <p className='mt-2'>Recharge</p>
+            <p className='sm:mt-2'>for Inner</p>
+            <p className='sm:mt-2'>Recharge</p>
           </h1>
 
           <div className="mt-5 sm:mt-20 mb-8 sm:mb-12 max-w-md">

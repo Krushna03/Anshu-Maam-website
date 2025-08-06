@@ -9,8 +9,8 @@ export default function PersonalWellness() {
         <div className="flex-1">
           <h1 className="px-4 sm:px-0 text-3xl sm:text-5xl font-comfortaa font-bold text-gray-900 leading-snug tracking-wide">
             Laughter Yoga 
-            <p className='mt-2'>for Personal </p>
-            <p className='mt-2'>Wellness</p>
+            <p className='sm:mt-2'>for Personal </p>
+            <p className='sm:mt-2'>Wellness</p>
           </h1>
 
           <div className="mt-5 sm:mt-20 mb-8 sm:mb-12 max-w-md">

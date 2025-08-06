@@ -10,8 +10,8 @@ export default function CorporateWellness() {
         <div className="flex-1">
         <h1 className="px-4 sm:px-0 text-3xl sm:text-5xl font-comfortaa font-bold text-gray-900 tracking-wide">
           Laughter Yoga
-          <p className='mt-2'>for Corporate</p> 
-          <p className='mt-2'>Wellness</p>
+          <p className='sm:mt-2'>for Corporate</p> 
+          <p className='sm:mt-2'>Wellness</p>
         </h1>
 
 

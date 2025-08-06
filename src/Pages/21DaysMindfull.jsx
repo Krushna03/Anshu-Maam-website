@@ -10,8 +10,8 @@ export default function TwentyOneDaysMindfull() {
         <div className="flex-1">
           <h1 className="px-4 sm:px-0 text-3xl sm:text-5xl font-comfortaa font-bold text-gray-900 leading-[1.5] tracking-wide">
             21 Day
-            <p className="mt-2">Mindfulness</p>
-            <p className="mt-2">Journey</p>
+            <p className="sm:mt-2">Mindfulness</p>
+            <p className="sm:mt-2">Journey</p>
           </h1>
 
           <h1 className='px-4 sm:px-0 text-xl mt-4 sm:mt-8 font-poppins font-medium'>
@@ -43,7 +43,7 @@ export default function TwentyOneDaysMindfull() {
       </div>
 
        {/* Benefits Section */}
-      <div className="mb-20">
+      <div className="mb-10">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-comfortaa font-bold text-gray-900 mb-10 text-center">
           Benefits
         </h2>
