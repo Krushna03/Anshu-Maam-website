@@ -51,9 +51,9 @@ const Footer = () => {
         <div className="space-y-4 text-center md:text-left">
           <h3 className="text-lg font-bold">Social Media</h3>
           <div className="flex justify-center md:justify-start gap-4 text-xl text-[#1f1f1f]">
-            <FaInstagram onClick={() => handleNavigate("instagram")} />
-            <FaLinkedinIn onClick={() => handleNavigate("linkedin")} />
-            <FaYoutube onClick={() => handleNavigate("youtube")} />
+            <FaInstagram className="cursor-pointer" onClick={() => handleNavigate("instagram")} />
+            <FaLinkedinIn className="cursor-pointer" onClick={() => handleNavigate("linkedin")} />
+            <FaYoutube className="cursor-pointer" onClick={() => handleNavigate("youtube")} />
           </div>
           <p className="text-sm font-medium mt-4">Subscribe to our newsletter</p>
           <div className="relative max-w-xs mx-auto md:mx-0">

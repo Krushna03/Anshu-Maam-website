@@ -91,3 +91,7 @@
 .clip-arch {
   clip-path: ellipse(100% 70% at 50% 30%);
 }
+
+.body {
+  overflow-x: hidden;
+}

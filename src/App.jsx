@@ -4,6 +4,11 @@ import ProjectLayout from './Layout/ProjectLayout'
 import AboutUs from './Pages/AboutUs'
 import Services from './Pages/Services'
 import ContactUs from './Pages/ContactUs'
+import PersonalWellness from './Pages/PersonalWellness'
+import CorporateWellness from './Pages/Coporate-wellness'
+import PowerCharge from './Pages/PowerCharge'
+import LeadersCertificate from './Pages/LeadersCertificate'
+import TwentyOneDaysMindfull from './Pages/21DaysMindfull'
 
 function App() {
   
@@ -27,7 +32,27 @@ function App() {
         {
           path: "/contact-us",
           element: <ContactUs />
-        }
+        },
+        {
+          path: "/personal-wellness",
+          element: <PersonalWellness />
+        },
+        {
+          path: "/corporate-wellness",
+          element: <CorporateWellness />
+        },
+        {
+          path: "/powercharge",
+          element: <PowerCharge />
+        },
+        {
+          path: "/leaders-certification",
+          element: <LeadersCertificate />
+        },
+        {
+          path: "/mindfulness-journey",
+          element: <TwentyOneDaysMindfull />
+        },
       ]
     },
   ]) 

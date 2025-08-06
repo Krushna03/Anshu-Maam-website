@@ -32,7 +32,7 @@ export default function GetInTouch() {
 
   return (
     <>
-      <div className="min-h-screen py-16 px-4">
+      <div className="overflow-x-hidden min-h-screen py-16 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
