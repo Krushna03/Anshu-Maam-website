@@ -1,8 +1,6 @@
 import React from 'react'
-import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import About from '../Components/About'
-import Footer from '../Components/Footer'
 import Slider from '../Components/Slider'
 import OfferingsSection from '../Components/OfferingSection'
 import EventCard from '../Components/EventCard'
@@ -35,6 +33,8 @@ const Home = () => {
         <section id="voice-of-joy" className="">
           <VoiceOfJoy />
         </section>
+
+        <CallToAction />
       </main>
     </>
   )

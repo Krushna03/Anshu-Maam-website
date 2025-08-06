@@ -1,131 +1,108 @@
-import { Heart } from 'lucide-react'
+import React from 'react';
+import { Heart } from 'lucide-react';
 
 export default function PowerCharge() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="max-w-7xl mx-auto bg-white min-h-screen px-4 py-12 sm:px-6 md:p-12">
       {/* Header */}
-      <header className="container mx-auto px-4 lg:px-8 py-8">
-        <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800">PowerCharge</h1>
-      </header>
+      <div className="flex flex-col lg:flex-row sm:gap-8 lg:gap-10 mb-6 sm:mb-10">
+        {/* Text Block */}
+        <div className="flex-1">
+          <h1 className="px-4 sm:px-0 text-3xl sm:text-5xl font-comfortaa font-bold text-gray-900 leading-[1.5] tracking-wide">
+            PowerCharge 
+            <p className='mt-2'>for Inner</p>
+            <p className='mt-2'>Recharge</p>
+          </h1>
 
-      {/* Main Content */}
-      <main className="container mx-auto px-4 lg:px-8">
-        {/* Hero Section */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
-          {/* Image */}
-          <div className="order-2 lg:order-1">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
+          <div className="mt-5 sm:mt-20 mb-8 sm:mb-12 max-w-md">
+            <p className="p-6 bg-[#FFF6EE] text-base sm:text-lg font-medium text-gray-700 leading-relaxed rounded-xl font-poppins">
+              Feeling drained, distracted, or disconnected? PowerCharge is your reset button. It’s designed to help you reconnect with yourself and others, boost energy, release stress, and recharge your mindset—all through practical, playful group activities.
+              <br /><br />
+              Whether you're leading a team or navigating personal challenges, this session helps you show up as your most vibrant, present self.
+            </p>
+          </div>
+        </div>
+
+        {/* Hero Image */}
+        <div className="w-full lg:w-[750px] lg:mt-20 mb-20 sm:mb-0">
+          <div className="relative rounded-2xl overflow-hidden p-5 bg-[#FFF6EE]">
+            <img
+              src="/powercharge.png"
+              alt="Group of people doing outdoor activities at sunset"
+              className="w-full h-auto max-h-[500px] object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* What's inside section */}
+      <div className="mb-24 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-comfortaa font-bold text-gray-900 mb-10 text-center">
+          What’s inside
+        </h2>
+
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-xl overflow-hidden w-full">
               <img
-                src="/images/group-activity.png"
-                alt="Group of people doing outdoor activities at sunset"
-                width={600}
-                height={400}
-                className="w-full h-64 lg:h-80 object-cover"
+                src="/sl-3.jpg"
+                alt="People participating in a group activity"
+                className="w-full h-auto object-cover rounded-2xl"
               />
             </div>
-          </div>
 
-          {/* Description */}
-          <div className="order-1 lg:order-2 flex flex-col justify-center">
-            <div className="space-y-4 text-gray-600 leading-relaxed">
-              <p className="text-base lg:text-lg">
-                Feeling drained, distracted, or disconnected? It's time for a reset. PowerCharge is designed to help you reconnect with yourself and others, boost your energy, release stress, and recharge your mindset, all through practical, fun activities.
-              </p>
-              <p className="text-base lg:text-lg">
-                This session blends stress-busting exercises, mindfully practices, and joyful group activities that leave you feeling refreshed and re-energized.
-              </p>
-              <p className="text-base lg:text-lg">
-                Whether you're leading a team or navigating personal challenges, PowerCharge gives you the tools to show up as your most vibrant, present self.
-              </p>
+            <div className="flex flex-col gap-6">
+              {[
+                'Guided stress-release techniques and movement',
+                'Mindfulness tools for clarity and calm',
+                'Laughter and group-based energizers',
+                'Emotional well-being practices you can use daily',
+              ].map((text, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <Heart className="w-8 h-8 text-pink-500 fill-pink-500 flex-shrink-0" />
+                  <p className="text-base sm:text-xl   font-poppins font-medium text-gray-800 leading-snug">
+                    {text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* What's inside Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-8 text-center">What's inside</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Small Image */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="rounded-xl overflow-hidden shadow-md">
-                <img
-                  src="/images/group-activity.png"
-                  alt="Group activity session"
-                  width={300}
-                  height={200}
-                  className="w-48 lg:w-64 h-32 lg:h-40 object-cover"
-                />
-              </div>
-            </div>
+      {/* Benefits Section */}
+      <div className="mb-20">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-comfortaa font-bold text-gray-900 mb-10 text-center">
+          Benefits
+        </h2>
 
-            {/* Features List */}
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <Heart className="w-6 h-6 text-pink-500 mt-1 fill-current flex-shrink-0" />
-                <p className="text-base lg:text-lg text-gray-700">Guided stress-release techniques and movement</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <Heart className="w-6 h-6 text-pink-500 mt-1 fill-current flex-shrink-0" />
-                <p className="text-base lg:text-lg text-gray-700">Mindfulness tools for clarity and calm</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <Heart className="w-6 h-6 text-pink-500 mt-1 fill-current flex-shrink-0" />
-                <p className="text-base lg:text-lg text-gray-700">Laughter and group-based energizers</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <Heart className="w-6 h-6 text-pink-500 mt-1 fill-current flex-shrink-0" />
-                <p className="text-base lg:text-lg text-gray-700">Emotional well-being practices you can use daily</p>
-              </div>
+        <div className="max-w-72 sm:max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 lg:gap-12">
+          {[
+            'Instant energy boost and mental clarity',
+            'Holistic stress management',
+            'Enhanced focus and meditation',
+            'A feel-good experience that lasts beyond the session',
+          ].map((text, index) => (
+            <div
+              key={index}
+              className="bg-pink-50 rounded-2xl px-6 py-8 sm:px-8 sm:py-10 flex flex-col items-center justify-center text-center shadow-sm"
+            >
+              <img src="lotus.png" alt="" className="w-10 h-10 mb-4" />
+              <p className="text-sm sm:text-base font-poppins font-medium text-gray-800 leading-snug">
+                {text}
+              </p>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </div>
 
-        {/* Benefits Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-12 text-center">Benefits</h2>
-          
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 lg:w-10 lg:h-10 bg-pink-500 rounded-full"></div>
-              </div>
-              <p className="text-sm lg:text-base text-gray-600 leading-tight">Instant energy boost and mental clarity</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 lg:w-10 lg:h-10 bg-pink-500 rounded-full"></div>
-              </div>
-              <p className="text-sm lg:text-base text-gray-600 leading-tight">Holistic stress management</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 lg:w-10 lg:h-10 bg-pink-500 rounded-full"></div>
-              </div>
-              <p className="text-sm lg:text-base text-gray-600 leading-tight">Enhanced focus and meditation</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 lg:w-10 lg:h-10 bg-pink-500 rounded-full"></div>
-              </div>
-              <p className="text-sm lg:text-base text-gray-600 leading-tight">A feel-good experience that lasts beyond the session</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Ideal for Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-6 text-center">Ideal for</h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-base lg:text-lg text-gray-600 text-center leading-relaxed">
-              Corporate wellness programs, team retreats, educator programs, or anyone looking to kickstart their day with purpose and positivity.
-            </p>
-          </div>
-        </section>
-      </main>
+      {/* Ideal for section */}
+      <div className="text-center px-2 sm:px-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-comfortaa font-bold text-gray-900 mb-6">
+          Ideal for
+        </h2>
+        <p className="text-base sm:text-xl lg:text-2xl font-poppins text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Corporate wellness programs, team retreats, educator programs, or anyone looking to kickstart their day with purpose and positivity.
+        </p>
+      </div>
     </div>
-  )
+  );
 }

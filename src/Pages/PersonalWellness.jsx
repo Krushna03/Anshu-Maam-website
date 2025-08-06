@@ -8,9 +8,9 @@ export default function PersonalWellness() {
         {/* Text Block */}
         <div className="flex-1">
           <h1 className="px-4 sm:px-0 text-3xl sm:text-5xl font-comfortaa font-bold text-gray-900 leading-snug tracking-wide">
-            Laughter Yoga <br />
-            for Personal <br />
-            Wellness
+            Laughter Yoga 
+            <p className='mt-2'>for Personal </p>
+            <p className='mt-2'>Wellness</p>
           </h1>
 
           <div className="mt-5 sm:mt-20 mb-8 sm:mb-12 max-w-md">
@@ -22,7 +22,7 @@ export default function PersonalWellness() {
 
         {/* Hero Image */}
         <div className="w-full lg:w-[750px] lg:mt-20 mb-20 sm:mb-0">
-          <div className="relative rounded-2xl overflow-hidden p-4 bg-[#FFF6EE]">
+          <div className="relative rounded-2xl overflow-hidden p-5 bg-[#FFF6EE]">
             <img
               src="/personal-wellness.jpg"
               alt="Group of people practicing laughter yoga outdoors"
