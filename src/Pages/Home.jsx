@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '../Components/Hero'
-import About from '../Components/About'
-import Slider from '../Components/Slider'
+import Hero from '../Components/Home/Hero'
+import About from '../Components/About/About'
+import Slider from '../Components/Home/Slider'
 import OfferingsSection from '../Components/OfferingSection'
 import EventCard from '../Components/EventCard'
-import VoiceOfJoy from '../Components/VoiceOfJoy'
+import VoiceOfJoy from '../Components/Home/VoiceOfJoy'
 import CallToAction from '../Components/CallToAction'
 
 const Home = () => {

@@ -118,11 +118,23 @@ const Header = () => {
 
         {/* Mobile Fullscreen Menu */}
         {menuOpen && (
-          <div className="fixed inset-0 top-[80px] bg-white z-40 px-6 pt-6 pb-10 flex flex-col gap-6 overflow-y-auto sm:hidden">
+          <div className="fixed inset-0 h-screen bg-white z-40 px-6 pt-6 pb-10 flex flex-col gap-6 overflow-y-auto sm:hidden">
+            <div className="sm:hidden absolute right-4">
+              <button
+                onClick={() => {
+                  setMenuOpen(!menuOpen);
+                  setIsMobileServicesOpen(false); // Reset services submenu
+                }}
+                className="text-black mr-5 focus:outline-none"
+              >
+                {menuOpen ? <X size={28} /> : <Menu size={28} />}
+              </button>
+            </div>
+            
             <NavLink
               to="/"
               onClick={() => setMenuOpen(false)}
-              className="text-black text-xl font-medium hover:font-bold"
+              className="mt-10 text-black text-xl font-medium hover:font-bold"
             >
               Home
             </NavLink>
@@ -150,13 +162,13 @@ const Header = () => {
               </button>
 
               {isMobileServicesOpen && (
-                <ul className="space-y-4 pl-2 border-l-2 border-pink-100 ml-1">
+                <ul className="space-y-4 pl-4 border-l-2 border-pink-100 ml-1">
                   {serviceItems.map((item, index) => (
                     <li key={index}>
                       <NavLink
                         to={`/${item.navigate}`}
                         onClick={() => setMenuOpen(false)}
-                        className="block text-base text-gray-800 hover:text-pink-600"
+                        className="block text-base text-gray-900 font-poppins mt-5 text-left hover:text-pink-600"
                       >
                         {item.title}
                       </NavLink>
@@ -169,7 +181,7 @@ const Header = () => {
             <Link
               to="/contact-us"
               onClick={() => setMenuOpen(false)}
-              className="mt-6 bg-[#ff007f] hover:bg-[#e60073] text-white text-lg text-center font-normal px-6 py-3 rounded-full shadow-md transition-all"
+              className=" bg-[#ff007f] hover:bg-[#e60073] text-white text-lg text-center font-normal px-6 py-3 rounded-full shadow-md transition-all"
             >
               Contact Us
             </Link>

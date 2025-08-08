@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home'
 import ProjectLayout from './Layout/ProjectLayout'
 import AboutUs from './Pages/AboutUs'
-import Services from './Pages/Services'
 import ContactUs from './Pages/ContactUs'
 import PersonalWellness from './Pages/PersonalWellness'
 import CorporateWellness from './Pages/Coporate-wellness'
@@ -24,10 +23,6 @@ function App() {
         {
           path: "/about-us",
           element: <AboutUs />
-        },
-        {
-          path: "/services",
-          element: <Services />
         },
         {
           path: "/contact-us",

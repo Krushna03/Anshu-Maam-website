@@ -72,7 +72,7 @@ const Footer = () => {
       {/* Bottom Footer Bar */}
       <div className="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-sm font-medium text-[#1f1f1f]">
         <p>Anju Shahani ©2025. All Rights Reserved</p>
-        <p className="mt-2 sm:mt-0">Developed with Joy by Krushna Sakhare</p>
+        {/* <p className="mt-2 sm:mt-0">Developed with Joy by Krushna Sakhare</p> */}
       </div>
     </footer>
   );
